@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+}
+
+@layer base {
+  html {
+    @apply font-sans;
+  }
+
+  p {
+    @apply tracking-normal text-slate-700;
+  }
+}

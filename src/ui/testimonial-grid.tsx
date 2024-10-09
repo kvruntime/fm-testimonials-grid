@@ -21,13 +21,13 @@ function TestimonialGrid() {
             </picture>
             <div className="flex flex-col">
               <span className="font-[500] text-[18px]">{item.name}</span>
-              <span className="text-opacity-10">{item.level}</span>
+              <span className="text-[--light-gray]">{item.level}</span>
             </div>
           </div>
 
           <div className="mt-2">
             <p className={"".concat("font-[600] text-xl mb-3", ` text-[${item.style?.textColor}]`)}>{item.title}</p>
-            <blockquote className="text-opacity-10" >{item.quote}</blockquote>
+            <blockquote className="text-[--light-gray]" >{item.quote}</blockquote>
           </div>
         </article>
       )

@@ -1,0 +1,30 @@
+.testimonial-container {
+  @apply grid grid-cols-1 md:grid-cols-4 gap-2;
+}
+
+.testimonial-container > :nth-child(1) {
+  position: relative;
+}
+
+.testimonial-container > :nth-child(1)::after {
+  content: url("/public/images/bg-pattern-quotation.svg");
+  /* background-repeat: no-repeat; */
+  position: absolute;
+  top: 15px;
+  right: 80px;
+  z-index: 1;
+  opacity: 0.7;
+}
+
+@media screen and (width>375px) {
+  .testimonial-container > :nth-child(1) {
+    grid-column: span 2;
+  }
+  .testimonial-container > :nth-child(4) {
+    grid-column: span 2;
+  }
+  .testimonial-container > :nth-child(5) {
+    grid-column: 4;
+    grid-row: span 2 / 1;
+  }
+}

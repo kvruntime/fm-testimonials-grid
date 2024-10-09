@@ -1,10 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 const defaultTheme = require("tailwindcss/defaultTheme")
 export default {
-  content: ["./src/**/*.{tex, ts}"],
+  content: ["./src/**/*.{tsx, ts}"],
   theme: {
     fontFamilly: {
-      sans: ["inter", ...defaultTheme.fontFamily.sans],
+      sans: ["'Barlow Semi Condensed'", ...defaultTheme.fontFamily.sans],
     },
     extend: {},
   },
